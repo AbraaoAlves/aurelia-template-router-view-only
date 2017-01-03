@@ -1,16 +1,26 @@
 {
   "name": "aurelia-template-router-view-only",
-  "description": "An Aurelia client application.",
+  "description": "An Aurelia sample to verify PullRequest in templating-router. ",
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/AbraaoAlves/aurelia-template-router-view-only.git"
+  },
+  "author": {
+    "name": "Abraão Alves",
+    "email": "abraao.teodosio@gmail.com",
+    "url": "abraaoalves.github.io"
   },
   "license": "MIT",
+  "scripts":{
+    "build:new-template-router": "cd node_modules/aurelia-templating-router && npm i && gulp build && cd ../..",
+    "postinstall": "npm run build:new-template-router"
+  },
   "dependencies": {
     "aurelia-bootstrapper": "^1.0.0",
     "aurelia-animator-css": "^1.0.0",
     "bluebird": "^3.4.1",
+    "aurelia-templating-router": "https://github.com/AbraaoAlves/templating-router",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"
   },
